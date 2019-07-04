@@ -1,8 +1,9 @@
 import React from "react"
-import { Link, useStaticQuery, graphql } from "gatsby"
+import { Link } from "gatsby"
 import styled from "styled-components"
 
-import Img from "gatsby-image"
+import logo from "../images/juha-makkonen.svg"
+import arrow from "../images/Arrow.svg"
 
 const Container = styled.div`
   margin: 0 auto;
@@ -10,7 +11,17 @@ const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 32px;
+  padding: 32px 32px;
+`
+
+const Blog = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+`
+
+const BlogText = styled.p`
+  margin-right: 8px;
 `
 
 const StyledLink = styled(Link)`
@@ -22,13 +33,16 @@ const StyledLink = styled(Link)`
 const Header = () => (
   <header>
     <Container>
-      <h1>
-        <Link to="/">
-          <img src="./images/juha-makkonen.svg" alt="logo" />
-        </Link>
-      </h1>
+      <Link to="/">
+        <img src={logo} alt="Logo" />
+      </Link>
+
       <nav>
-        <StyledLink to="/blog">Blogiin</StyledLink>
+        <StyledLink to="/blog">
+          <Blog>
+            <BlogText>Blogiin</BlogText> <img src={arrow} alt="nuoli" />
+          </Blog>
+        </StyledLink>
       </nav>
     </Container>
   </header>

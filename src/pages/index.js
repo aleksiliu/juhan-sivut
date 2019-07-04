@@ -1,18 +1,28 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import SEO from "../components/seo"
 import Header from "../components/header"
 
+import { createGlobalStyle } from "styled-components"
+
+const GlobalStyle = createGlobalStyle`
+  body {
+    border-top: 4px solid #88C577;
+    color: #5C5C68;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+`
+
 const IndexPage = () => (
   <>
-    <SEO title="Home" />
+    <GlobalStyle />
+    <SEO title="Etusivu" />
     <Header />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-
-    <Link to="/blog/">Blog</Link>
+    <h2>Mitä Juha osaa?</h2>
   </>
 )
 
