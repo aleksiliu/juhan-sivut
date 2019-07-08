@@ -2,43 +2,40 @@ import React from "react"
 import styled from "styled-components"
 
 import juha from "../images/Juha.png"
-
-const IntroSection = styled.section`
-  background-color: #f5f5f5;
-  margin: 0 32px;
-  border-radius: 4px;
-  height: 368px;
-`
+import Section from "./section"
+import Button from "./Button"
 
 const IntroContainer = styled.div`
   margin: 0 auto;
   max-width: 1110px;
   padding: 32px 32px;
   display: flex;
-`
 
-const Button = styled.a`
-  display: inline-block;
-  border-radius: 25px;
-  padding: 8px 24px;
-  background: #88c577;
-  color: white;
-  text-decoration: none;
-  margin-top: 24px;
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 `
-
 const IntroText = styled.div`
   max-width: 400px;
   margin-top: 40px;
+  @media (max-width: 768px) {
+    margin-top: 0;
+    max-width: 100%;
+    text-align: center
+  }
 `
-
 const IntroImg = styled.div`
   max-width: 440px;
   margin-top: -70px;
+  margin-left: 100px;
+  @media (max-width: 768px) {
+    max-width: 100%;
+    margin-left: 0;
+    text-align: center
+  }
 `
-
 const Intro = () => (
-  <IntroSection>
+  <Section>
     <IntroContainer>
       <IntroText>
         <h1>Venatis odio doneci</h1>
@@ -47,8 +44,6 @@ const Intro = () => (
           ex, a auctor tortor ipsum et.
         </p>
         <Button
-          href="https://github.com/styled-components/styled-components"
-          rel="noopener"
         >
           Ota yhteyttä
         </Button>
@@ -57,7 +52,7 @@ const Intro = () => (
         <img src={juha} alt="nuoli" />
       </IntroImg>
     </IntroContainer>
-  </IntroSection>
+  </Section>
 )
 
 export default Intro

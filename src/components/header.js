@@ -40,7 +40,7 @@ const Header = () => (
       <nav>
         <StyledLink to="/blog">
           <Blog>
-            <BlogText>Blogiin</BlogText> <img src={arrow} alt="nuoli" />
+            <BlogText>Blogi</BlogText> <img src={arrow} alt="nuoli" />
           </Blog>
         </StyledLink>
       </nav>
