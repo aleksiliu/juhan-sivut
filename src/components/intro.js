@@ -31,7 +31,8 @@ const IntroImg = styled.div`
   @media (max-width: 768px) {
     max-width: 100%;
     margin-left: 0;
-    text-align: center
+    text-align: center;
+    margin-top: 24px;
   }
 `
 const Intro = () => (
@@ -43,7 +44,7 @@ const Intro = () => (
           Donec molestie, odio nec ultrices venenatis, lectus augue pellentesque
           ex, a auctor tortor ipsum et.
         </p>
-        <Button
+        <Button hide
         >
           Ota yhteyttä
         </Button>
