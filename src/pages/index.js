@@ -3,6 +3,7 @@ import React from "react"
 import SEO from "../components/seo"
 import Header from "../components/header"
 import Intro from "../components/intro"
+import About from "../components/about"
 
 import { createGlobalStyle } from "styled-components"
 
@@ -14,6 +15,7 @@ const GlobalStyle = createGlobalStyle`
 
   h1, h2 {
     color: #303037;
+    font-weight: 400;
   }
 
   img, p {
@@ -23,7 +25,6 @@ const GlobalStyle = createGlobalStyle`
   * {
     margin: 0;
     padding: 0;
-    
   }
 `
 
@@ -33,6 +34,7 @@ const IndexPage = () => (
     <SEO title="Etusivu" />
     <Header />
     <Intro />
+    <About />
   </>
 )
 

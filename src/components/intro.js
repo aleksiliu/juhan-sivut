@@ -4,11 +4,11 @@ import styled from "styled-components"
 import juha from "../images/Juha.png"
 import Section from "./section"
 import Button from "./Button"
+import Container from "./container"
 
 const IntroContainer = styled.div`
   margin: 0 auto;
   max-width: 1110px;
-  padding: 32px 32px;
   display: flex;
 
   @media (max-width: 768px) {
@@ -27,6 +27,7 @@ const IntroText = styled.div`
 const IntroImg = styled.div`
   max-width: 440px;
   margin-top: -70px;
+  margin-bottom: -100px;
   margin-left: 100px;
   @media (max-width: 768px) {
     max-width: 100%;
@@ -37,6 +38,7 @@ const IntroImg = styled.div`
 `
 const Intro = () => (
   <Section>
+    <Container>
     <IntroContainer>
       <IntroText>
         <h1>Venatis odio doneci</h1>
@@ -53,6 +55,7 @@ const Intro = () => (
         <img src={juha} alt="nuoli" />
       </IntroImg>
     </IntroContainer>
+    </Container>
   </Section>
 )
 

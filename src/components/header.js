@@ -4,14 +4,12 @@ import styled from "styled-components"
 
 import logo from "../images/juha-makkonen.svg"
 import arrow from "../images/Arrow.svg"
+import Container from "../components/container"
 
-const Container = styled.div`
-  margin: 0 auto;
-  max-width: 1110px;
+const Heading = styled.header`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 32px 32px;
 `
 
 const Blog = styled.div`
@@ -31,8 +29,9 @@ const StyledLink = styled(Link)`
 `
 
 const Header = () => (
-  <header>
+  
     <Container>
+      <Heading>
       <Link to="/">
         <img src={logo} alt="Logo" />
       </Link>
@@ -44,8 +43,9 @@ const Header = () => (
           </Blog>
         </StyledLink>
       </nav>
+      </Heading>
     </Container>
-  </header>
+  
 )
 
 export default Header
