@@ -7,14 +7,18 @@ const TextBlock = styled.div`
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr;
   gap: 24px 0;
-  margin-top: 40px;
+  margin-top: 56px;
+  @media (max-width: 768px) {
+    display: block;
+  }
 `
 
 const Block = styled.div`
   display: grid;
   grid-template-columns: 280px 2fr;
   @media (max-width: 768px) {
-    grid-template-columns: 1fr;
+    margin-top: 32px;
+    display: block;
   }
 `
 const H2 = styled.h2`

@@ -17,6 +17,7 @@ const GlobalStyle = createGlobalStyle`
     color: #303037;
     font-weight: 400;
   }
+  
 
   img, p {
     margin-bottom: 0
