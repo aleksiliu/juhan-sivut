@@ -33,13 +33,20 @@ const H2 = styled.h2`
 }
 `
 
+const P = styled.p`
+  padding-bottom: 24px;
+  border-bottom: 2px solid #F5F5F5;
+  
+`
+
 const About = () => (
   
     <Container>
       <TextBlock>
         <Block>
       <H2>Kuka on Juha?</H2>
-      <p>Juha on tiimipelaaja henkeen ja vereen sekä venyy tarvittaessa koko joukkueen puolesta tulosten saavuttamiseksi. Hänellä on myös jatkuva halu oppia ja kehittyä sekä hänen analyyttisyys tuo rutkasti lisäarvoa asiakkaalle.</p>
+      <P>Juha on tiimipelaaja henkeen ja vereen sekä venyy tarvittaessa koko joukkueen puolesta tulosten saavuttamiseksi. Hänellä on myös jatkuva halu oppia ja kehittyä sekä hänen analyyttisyys tuo rutkasti lisäarvoa asiakkaalle.</P>
+      
       </Block>
      <Block>
       <H2>Mitä Juha osaa?</H2>
