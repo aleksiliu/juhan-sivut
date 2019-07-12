@@ -4,20 +4,25 @@ import SEO from "../components/seo"
 import Header from "../components/header"
 import Intro from "../components/intro"
 import About from "../components/about"
+import Work from "../components/work"
 
 import { createGlobalStyle } from "styled-components"
 
 const GlobalStyle = createGlobalStyle`
   body {
-    border-top: 4px solid #88C577;
-    color: #5C5C68;
+    ::before {
+    background: linear-gradient(160.12deg, #BFDDB6 0%, #4CB8BA 100%);
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    content: "";
+    display: block;
+    height: 4px;
+  }
   }
 
   h1, h2 {
     color: #303037;
     font-weight: 400;
   }
-  
 
   img, p {
     margin-bottom: 0
@@ -25,6 +30,7 @@ const GlobalStyle = createGlobalStyle`
 
   * {
     margin: 0;
+    box-sizing: border-box;
     padding: 0;
   }
 `
@@ -36,6 +42,7 @@ const IndexPage = () => (
     <Header />
     <Intro />
     <About />
+    <Work />
   </>
 )
 
