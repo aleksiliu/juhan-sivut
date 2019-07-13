@@ -21,6 +21,10 @@ const GlobalStyle = createGlobalStyle`
   }
   }
 
+  h1 {
+    font-size: 48px;
+  }
+
   h1, h2 {
     color: #303037;
     font-weight: 400;

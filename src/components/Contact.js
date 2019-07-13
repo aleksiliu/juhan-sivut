@@ -3,6 +3,9 @@ import styled from "styled-components"
 import Section from "./section"
 import Container from "./container"
 import Button from "./button"
+import phone from "../images/phone.svg"
+import linkedin from "../images/linkedin.svg"
+import mail from "../images/mail.svg"
 
 const H1 = styled.h1`
   text-align: center;
@@ -14,31 +17,47 @@ const ContactText = styled.p`
   color: #FFF;
 `
 
-const Containeri = styled(Container)`
+const ContactContainer = styled(Container)`
   margin-bottom: 32px;
+  padding: 112px 32px;
 `
 
 const ButtonContainer = styled.div`
-  display: flex;
-  justify-content: center;
+  display: inline-grid;
+  grid-gap: 24px;
+  grid-template-columns: auto auto auto;
+  margin-top: 8px;
+  
   @media (max-width: 768px) {
-    flex-direction: column;
+    grid-template-columns: 1fr;
+    grid-gap: 8px;
   }
+`
+
+const IconButton = styled(Button)`
+  display: flex;
+  align-items: center;
+  padding: 16px 24px;
+  border-radius: 30px;
+  
+`
+const Icon = styled.img`
+  margin-right: 16px;
 `
 
 const Contact = () => (
   <Section gradient>
-    <Containeri>
+    <ContactContainer>
     
         <H1>Haluaisitko minut töihin?</H1>
         <ContactText>Donec molestie, odio nec ultrices venenatis, lectus augue pellentesque ex, a auctor tortor ipsum et.</ContactText>
         
         <ButtonContainer>
-        <Button secondary>+358 40 5748126</Button>
-        <Button secondary>juha.petteri.makkonen@gmail.com</Button>
-        <Button secondary>LinkedIn</Button>
+        <IconButton secondary><Icon src={phone} alt="phone" />+358 40 5748126</IconButton>
+        <IconButton secondary><Icon src={mail} alt="mail" />juha.petteri.makkonen@gmail.com</IconButton>
+        <IconButton secondary><Icon src={linkedin} alt="linkedin" />LinkedIn</IconButton>
         </ButtonContainer>
-    </Containeri>
+    </ContactContainer>
   </Section>
 )
 

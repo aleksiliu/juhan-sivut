@@ -34,7 +34,7 @@ const H2 = styled.h2`
 
 const Circle = styled.div`
   display: flex;
-  margin-right: 16px;
+  margin-right: 24px;
   @media (max-width: 768px) {
     margin-bottom: 16px;
   }
