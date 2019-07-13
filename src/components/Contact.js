@@ -14,6 +14,10 @@ const ContactText = styled.p`
   color: #FFF;
 `
 
+const Containeri = styled(Container)`
+  margin-bottom: 32px;
+`
+
 const ButtonContainer = styled.div`
   display: flex;
   justify-content: center;
@@ -24,7 +28,7 @@ const ButtonContainer = styled.div`
 
 const Work = () => (
   <Section gradient>
-    <Container>
+    <Containeri>
     
         <H1>Haluaisitko minut töihin?</H1>
         <ContactText>Donec molestie, odio nec ultrices venenatis, lectus augue pellentesque ex, a auctor tortor ipsum et.</ContactText>
@@ -34,7 +38,7 @@ const Work = () => (
         <Button secondary>juha.petteri.makkonen@gmail.com</Button>
         <Button secondary>LinkedIn</Button>
         </ButtonContainer>
-    </Container>
+    </Containeri>
   </Section>
 )
 
