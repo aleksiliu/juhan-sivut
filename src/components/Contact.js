@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import Section from "./section"
 import Container from "./container"
-import Button from "./Button"
+import Button from "./button"
 
 const H1 = styled.h1`
   text-align: center;

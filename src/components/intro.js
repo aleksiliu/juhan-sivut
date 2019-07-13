@@ -3,7 +3,7 @@ import styled from "styled-components"
 
 import juha from "../images/Juha.png"
 import Section from "./section"
-import Button from "./Button"
+import Button from "./button"
 import Container from "./container"
 
 const IntroContainer = styled.div`
