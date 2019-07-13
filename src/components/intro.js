@@ -2,9 +2,9 @@ import React from "react"
 import styled from "styled-components"
 
 import juha from "../images/Juha.png"
-import Section from "./Section"
+import Section from "./section"
 import Button from "./Button"
-import Container from "./Container"
+import Container from "./container"
 
 const IntroContainer = styled.div`
   margin: 0 auto;

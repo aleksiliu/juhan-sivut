@@ -4,7 +4,7 @@ import styled from "styled-components"
 
 import logo from "../images/juha-makkonen.svg"
 import arrow from "../images/Arrow.svg"
-import Container from "./Container"
+import Container from "./container"
 
 const Heading = styled.header`
   display: flex;

@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import Container from "./Container"
+import Container from "./container"
 import circle from "../images/circle.svg"
 
 const TextBlock = styled.div`
