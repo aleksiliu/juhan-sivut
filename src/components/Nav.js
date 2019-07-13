@@ -4,12 +4,17 @@ import styled from "styled-components"
 
 import logo from "../images/juha-makkonen.svg"
 import arrow from "../images/Arrow.svg"
-import Container from "./container"
 
 const Heading = styled.header`
   display: flex;
   align-items: center;
   justify-content: space-between;
+`
+
+const HeaderContainer = styled.div`
+  margin: 0 auto;
+  max-width: 1110px;
+  padding: 40px 32px;
 `
 
 const Blog = styled.div`
@@ -30,7 +35,7 @@ const StyledLink = styled(Link)`
 
 const Nav = () => (
   
-    <Container>
+    <HeaderContainer>
       <Heading>
       <Link to="/">
         <img src={logo} alt="Logo" />
@@ -44,7 +49,7 @@ const Nav = () => (
         </StyledLink>
       </nav>
       </Heading>
-    </Container>
+    </HeaderContainer>
   
 )
 
