@@ -28,7 +28,7 @@ const StyledLink = styled(Link)`
   font-size: 16px;
 `
 
-const Header = () => (
+const Nav = () => (
   
     <Container>
       <Heading>
@@ -48,4 +48,4 @@ const Header = () => (
   
 )
 
-export default Header
+export default Nav

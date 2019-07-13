@@ -1,11 +1,11 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import Header from "../components/header"
+import Nav from "../components/Nav"
 
 const BlogPage = () => (
   <>
-    <Header />
+    <Nav />
     <h1>Hi</h1>
 
     <Link to="/">Back</Link>

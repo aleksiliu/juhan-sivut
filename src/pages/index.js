@@ -1,7 +1,7 @@
 import React from "react"
 
 import SEO from "../components/seo"
-import Header from "../components/Header"
+import Nav from "../components/Nav"
 import Intro from "../components/Intro"
 import About from "../components/About"
 import Work from "../components/Work"
@@ -41,7 +41,7 @@ const IndexPage = () => (
   <>
     <GlobalStyle />
     <SEO title="Etusivu" />
-    <Header />
+    <Nav />
     <Intro />
     <About />
     <Work />
