@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
-import Section from "./section"
-import Container from "./container"
+import Section from "./Section"
+import Container from "./Container"
 import Button from "./Button"
 
 const H2 = styled.h2`

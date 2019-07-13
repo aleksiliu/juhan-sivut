@@ -1,12 +1,12 @@
 import React from "react"
 import styled from "styled-components"
-import Container from "./container"
+import Container from "./Container"
 
 const H2 = styled.h2`
   text-align: center;
 `
 
-const About = () => (
+const Theses = () => (
   
     <Container>
       <H2>Teesit</H2>
@@ -17,4 +17,4 @@ const About = () => (
   
 )
 
-export default About
+export default Theses

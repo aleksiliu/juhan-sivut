@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
-import Section from "./section"
-import Container from "./container"
+import Section from "./Section"
+import Container from "./Container"
 import Button from "./Button"
 
 const H1 = styled.h1`
@@ -26,7 +26,7 @@ const ButtonContainer = styled.div`
   }
 `
 
-const Work = () => (
+const Contact = () => (
   <Section gradient>
     <Containeri>
     
@@ -42,4 +42,4 @@ const Work = () => (
   </Section>
 )
 
-export default Work
+export default Contact

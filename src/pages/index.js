@@ -1,12 +1,12 @@
 import React from "react"
 
 import SEO from "../components/seo"
-import Header from "../components/header"
-import Intro from "../components/intro"
-import About from "../components/about"
-import Work from "../components/work"
-import Theses from "../components/theses"
-import Contact from "../components/contact"
+import Header from "../components/Header"
+import Intro from "../components/Intro"
+import About from "../components/About"
+import Work from "../components/Work"
+import Theses from "../components/Theses"
+import Contact from "../components/Contact"
 
 import { createGlobalStyle } from "styled-components"
 
