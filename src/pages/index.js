@@ -5,6 +5,8 @@ import Header from "../components/header"
 import Intro from "../components/intro"
 import About from "../components/about"
 import Work from "../components/work"
+import Theses from "../components/theses"
+import Contact from "../components/contact"
 
 import { createGlobalStyle } from "styled-components"
 
@@ -43,6 +45,8 @@ const IndexPage = () => (
     <Intro />
     <About />
     <Work />
+    <Theses />
+    <Contact />
   </>
 )
 

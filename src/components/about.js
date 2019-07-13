@@ -5,8 +5,6 @@ import circle from "../images/circle.svg"
 
 const TextBlock = styled.div`
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 2fr;
   gap: 24px 0;
   margin-top: 56px;
   @media (max-width: 768px) {

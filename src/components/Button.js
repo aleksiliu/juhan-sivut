@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled, { css } from 'styled-components'
 
 const Button = styled.a`
   display: inline-block;
@@ -9,7 +9,7 @@ const Button = styled.a`
   text-decoration: none;
   margin-top: 24px;
   box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
-  transition: all .22s;
+  transition: all .25s;
   cursor: pointer;
   &:hover {
     transform: translateY(-3px);
@@ -17,8 +17,17 @@ const Button = styled.a`
     filter: brightness(105%);
     }
   @media (max-width: 768px) {
-    display: ${props => props.hide ? "none" : "inline-block"};
+    display: ${props => props.hide && "none" };
   }
+
+  ${props => props.secondary && css`
+    background: #FFF;
+    color: #5C5C68;
+    &:hover {
+    color: #88c577;
+    }
+  `}
+
 `;
 
 export default Button;

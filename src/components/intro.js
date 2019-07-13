@@ -26,7 +26,7 @@ const IntroText = styled.div`
 `
 const IntroImg = styled.div`
   max-width: 440px;
-  margin-top: -70px;
+  margin-top: -80px;
   margin-bottom: -100px;
   margin-left: 100px;
   @media (max-width: 768px) {
