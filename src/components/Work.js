@@ -37,7 +37,11 @@ const Col = styled.div`
   border-radius: 4px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   padding: 24px;
-  margin-bottom: 24px;
+  @media (max-width: 768px) {
+  &:first-child {
+    margin-bottom: 24px;
+  }
+  }
 `
 
 const Work = () => (
