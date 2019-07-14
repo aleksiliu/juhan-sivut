@@ -44,6 +44,8 @@ const Icon = styled.img`
 
 const UL = styled.ul`
   list-style: none;
+  margin: 0;
+  
 `
 
 
