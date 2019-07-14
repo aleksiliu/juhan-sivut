@@ -8,6 +8,7 @@ const TextBlock = styled.div`
   gap: 24px 0;
   @media (max-width: 768px) {
     display: block;
+    margin-top: 50px;
   }
 `
 

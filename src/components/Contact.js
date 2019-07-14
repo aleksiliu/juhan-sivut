@@ -20,6 +20,10 @@ const ContactText = styled.p`
 const ContactContainer = styled(Container)`
   margin-bottom: 32px;
   padding: 112px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 `
 
 const ButtonContainer = styled.div`
