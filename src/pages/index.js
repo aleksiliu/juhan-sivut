@@ -1,6 +1,6 @@
 import React from "react"
 
-import SEO from "../components/Seo"
+import Seo from "../components/Seo"
 import Nav from "../components/Nav"
 import Intro from "../components/Intro"
 import About from "../components/About"
@@ -44,7 +44,7 @@ const GlobalStyle = createGlobalStyle`
 const IndexPage = () => (
   <>
     <GlobalStyle />
-    <SEO title="Etusivu" />
+    <Seo title="Etusivu" />
     <Nav />
     <Intro />
     <About />
