@@ -1,8 +1,7 @@
 import React from "react"
 import styled from "styled-components"
-import Section from "./section"
-import Container from "./container"
-import Button from "./button"
+import Section from "./Section"
+import Container from "./Container"
 
 const H2 = styled.h2`
   text-align: center;
@@ -14,7 +13,7 @@ const Row = styled.div`
   grid-template-columns: 1fr 1fr;
 
   @media (max-width: 768px) {
-    grid-template-columns: 1fr;
+    display: block;
   }
 `
 
@@ -38,6 +37,7 @@ const Col = styled.div`
   border-radius: 4px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   padding: 24px;
+  margin-bottom: 24px;
 `
 
 const Work = () => (
@@ -74,7 +74,7 @@ const Work = () => (
            </Col>
        </Row>
 
-        <Button>Lataa CV</Button>
+      
     </Container>
   </Section>
 )

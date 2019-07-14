@@ -15,6 +15,9 @@ const HeaderContainer = styled.div`
   margin: 0 auto;
   max-width: 1110px;
   padding: 40px 32px;
+  @media (max-width: 768px) {
+    padding: 32px 24px;
+  }
 `
 
 const Blog = styled.div`

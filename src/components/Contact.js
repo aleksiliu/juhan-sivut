@@ -1,8 +1,8 @@
 import React from "react"
 import styled from "styled-components"
-import Section from "./section"
-import Container from "./container"
-import Button from "./button"
+import Section from "./Section"
+import Container from "./Container"
+import Button from "./Button"
 import phone from "../images/phone.svg"
 import linkedin from "../images/linkedin.svg"
 import mail from "../images/mail.svg"
@@ -24,6 +24,9 @@ const ContactContainer = styled(Container)`
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  @media (max-width: 768px) {
+    margin-bottom: 0;
+  }
 `
 
 const ButtonContainer = styled.div`
@@ -57,9 +60,9 @@ const Contact = () => (
         <ContactText>Donec molestie, odio nec ultrices venenatis, lectus augue pellentesque ex, a auctor tortor ipsum et.</ContactText>
         
         <ButtonContainer>
-        <IconButton secondary><Icon src={phone} alt="phone" />+358 40 5748126</IconButton>
-        <IconButton secondary><Icon src={mail} alt="mail" />juha.petteri.makkonen@gmail.com</IconButton>
-        <IconButton secondary><Icon src={linkedin} alt="linkedin" />LinkedIn</IconButton>
+        <IconButton secondary href="tel:+358 40 5748126"><Icon src={phone} alt="phone" />+358 40 5748126</IconButton>
+        <IconButton secondary href="mailto:juha.petteri.makkonen@gmail.com"><Icon src={mail} alt="mail" />juha.petteri.makkonen@gmail.com</IconButton>
+        <IconButton secondary href="https://www.linkedin.com/in/juha-makkonen-407374123" target="_blank"><Icon src={linkedin} alt="linkedin" />LinkedIn</IconButton>
         </ButtonContainer>
     </ContactContainer>
   </Section>

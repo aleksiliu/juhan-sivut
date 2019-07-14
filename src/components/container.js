@@ -5,7 +5,7 @@ const Container = styled.section`
   max-width: 1110px;
   padding: 64px 32px;
   @media (max-width: 768px) {
-    padding: 32px 32px;
+    padding: 32px 24px;
   }
 `
 
