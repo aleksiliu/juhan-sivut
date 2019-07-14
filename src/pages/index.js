@@ -1,6 +1,6 @@
 import React from "react"
 
-import Seo from "../components/Seo"
+import Seo from "../components/seo"
 import Nav from "../components/Nav"
 import Intro from "../components/Intro"
 import About from "../components/About"
