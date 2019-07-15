@@ -16,7 +16,7 @@ const IntroContainer = styled.div`
   }
 `
 const IntroText = styled.div`
-  max-width: 400px;
+  max-width: 440px;
   margin-top: 40px;
   @media (max-width: 768px) {
     margin-top: 0;
@@ -38,6 +38,7 @@ const IntroImg = styled.div`
 `
 
 const H1 = styled.h1`
+  display: inline-block;
   position: relative;
   z-index: 1;
 :before {
@@ -49,8 +50,8 @@ const H1 = styled.h1`
   right: 0px;
   z-index: -1;
   transform: skewX(10deg) skewY(-2deg);
-  margin: 8px -4px 2px -8px;
-  background: #D4E7CF;
+  margin: 8px -8px 8px -8px;
+  background: #DAE9D6;
   border-radius: 8px;
 }
 `

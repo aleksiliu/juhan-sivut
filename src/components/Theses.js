@@ -76,7 +76,7 @@ const Theses = () => (
 <li><strong>Perusasioiden palvominen</strong>  Toista perusasioita useasti, niin oppimiskäyräsi nousee ekspotentiaalisesti.</li></UL>
 
       </TheseContainer>
-
+  
       <TheseContainer>
 
       <These>

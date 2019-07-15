@@ -24,6 +24,7 @@ const ContactContainer = styled(Container)`
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  
   @media (max-width: 768px) {
     margin-bottom: 0;
   }
