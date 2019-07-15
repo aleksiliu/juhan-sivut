@@ -36,12 +36,30 @@ const IntroImg = styled.div`
     margin-top: 24px;
   }
 `
+
+const H1 = styled.h1`
+  position: relative;
+  z-index: 1;
+:before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  z-index: -1;
+  transform: skewX(10deg) skewY(-2deg);
+  margin: 8px -4px 2px -8px;
+  background: #D4E7CF;
+  border-radius: 8px;
+}
+`
 const Intro = () => (
   <Section>
     <Container>
     <IntroContainer>
       <IntroText>
-        <h1>Venatis odio doneci</h1>
+        <H1>Venatis odio doneci</H1>
         <p>
           Donec molestie, odio nec ultrices venenatis, lectus augue pellentesque
           ex, a auctor tortor ipsum et.
