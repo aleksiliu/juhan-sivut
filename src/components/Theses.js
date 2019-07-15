@@ -48,13 +48,22 @@ const UL = styled.ul`
   
 `
 
+const ThesesGrid = styled.div`
+  display: grid;
+  gap: 48px 0;
 
+  @media (max-width: 768px) {
+    gap: 32px 0;
+    margin-top: 32px;
+  }
+`
 
 const Theses = () => (
   
     <Container>
       <H2>Teesit</H2>
 
+      <ThesesGrid>
       <TheseContainer>
 
       <These>
@@ -80,7 +89,7 @@ const Theses = () => (
 <li><strong>Avoimuus </strong>  Avoimesti viestitään asioista, mitä tapahtuu tai on tulossa. Avoimuus myös palautteenannossa ja se annetaan tekemisestä.</li></UL>
 
       </TheseContainer>
-     
+      </ThesesGrid>
     </Container>
   
 )
