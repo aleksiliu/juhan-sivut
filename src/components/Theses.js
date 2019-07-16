@@ -45,6 +45,7 @@ const Icon = styled.img`
 const UL = styled.ul`
   list-style: none;
   margin-left: 16px;
+  margin-bottom: 0;
   @media (max-width: 768px) {
     margin-left: 0;
   }
