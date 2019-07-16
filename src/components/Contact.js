@@ -6,6 +6,7 @@ import Button from "./Button"
 import phone from "../images/phone.svg"
 import linkedin from "../images/linkedin.svg"
 import mail from "../images/mail.svg"
+import circleStripes from "../images/circleStripes.png"
 
 const H1 = styled.h1`
   text-align: center;
@@ -53,8 +54,38 @@ const Icon = styled.img`
   margin-right: 16px;
 `
 
+const StripeLeft = styled.img`
+  position: absolute;
+  bottom: 50%;
+  left: -176px;
+  @media (max-width: 768px) {
+    display: none;
+  }
+`
+
+const StripeRight = styled.img`
+  position: absolute;
+  right: -176px;
+  top: 50%;
+  @media (max-width: 768px) {
+    display: none;
+  }
+`
+
+const CustomSection = styled(Section)`
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 32px;
+  @media (max-width: 768px) {
+    margin-bottom: 0;
+  }
+`
+
 const Contact = () => (
-  <Section gradient>
+  <CustomSection gradient>
+    <StripeLeft src={circleStripes} alt="stripes" />
+    <StripeRight src={circleStripes} alt="stripes" />
+    
     <ContactContainer>
     
         <H1>Haluaisitko minut töihin?</H1>
@@ -66,7 +97,8 @@ const Contact = () => (
         <IconButton secondary href="https://www.linkedin.com/in/juha-makkonen-407374123" target="_blank"><Icon src={linkedin} alt="linkedin" />LinkedIn</IconButton>
         </ButtonContainer>
     </ContactContainer>
-  </Section>
+  
+  </CustomSection>
 )
 
 export default Contact
