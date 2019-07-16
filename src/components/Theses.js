@@ -44,8 +44,10 @@ const Icon = styled.img`
 
 const UL = styled.ul`
   list-style: none;
-  margin: 0;
-  
+  margin-left: 16px;
+  @media (max-width: 768px) {
+    margin-left: 0;
+  }
 `
 
 const ThesesGrid = styled.div`
@@ -71,9 +73,9 @@ const Theses = () => (
       <P>myynti</P>
       </These>
 
-      <UL><li><strong>Palvelualttius</strong>  Palvellaan asiakasta pyyteettömästi ja reagointinopeus pyyntöihin.</li>
-<li><strong>Kuuntelu</strong>  Meillä on kaksi korvaa ja yksi suu sen takia, että kuuntelisimme enemmän. Kuuntele, mitä asiakas haluaa ja etene sen mukaan.</li>
-<li><strong>Perusasioiden palvominen</strong>  Toista perusasioita useasti, niin oppimiskäyräsi nousee ekspotentiaalisesti.</li></UL>
+      <UL><li><strong>Palvelualttius</strong>  <p>Palvellaan asiakasta pyyteettömästi ja reagointinopeus pyyntöihin.</p></li>
+<li><strong>Kuuntelu</strong>  <p>Meillä on kaksi korvaa ja yksi suu sen takia, että kuuntelisimme enemmän. Kuuntele, mitä asiakas haluaa ja etene sen mukaan.</p></li>
+<li><strong>Perusasioiden palvominen</strong>  <p>Toista perusasioita useasti, niin oppimiskäyräsi nousee ekspotentiaalisesti.</p></li></UL>
 
       </TheseContainer>
   
@@ -84,9 +86,9 @@ const Theses = () => (
       <P>Johtajuus</P>
       </These>
 
-      <UL><li><strong>Palveluammatti</strong>  Esimiehenä palvelet alaisiasi parhaasi mukaan ja autat heitä eteenpäin.</li>
-<li><strong>Vastuu ja vapaus</strong>  Annetaan selkeät raamit, missä kuljetaan, mutta vapaus toteuttaa parhaalla mahdollisella näkemällään tavalla asioita. Tekemisellä on kaksi lopputulosta: Onnistuminen ja oppiminen.</li>
-<li><strong>Avoimuus </strong>  Avoimesti viestitään asioista, mitä tapahtuu tai on tulossa. Avoimuus myös palautteenannossa ja se annetaan tekemisestä.</li></UL>
+      <UL><li><strong>Palveluammatti</strong>  <p>Esimiehenä palvelet alaisiasi parhaasi mukaan ja autat heitä eteenpäin.</p></li>
+<li><strong>Vastuu ja vapaus</strong>  <p>Annetaan selkeät raamit, missä kuljetaan, mutta vapaus toteuttaa parhaalla mahdollisella näkemällään tavalla asioita. Tekemisellä on kaksi lopputulosta: Onnistuminen ja oppiminen.</p></li>
+<li><strong>Avoimuus </strong> <p> Avoimesti viestitään asioista, mitä tapahtuu tai on tulossa. Avoimuus myös palautteenannossa ja se annetaan tekemisestä.</p></li></UL>
 
       </TheseContainer>
       </ThesesGrid>

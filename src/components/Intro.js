@@ -50,7 +50,7 @@ const H1 = styled.h1`
   right: 0px;
   z-index: -1;
   transform: skewX(10deg) skewY(-2deg);
-  margin: 8px -8px 8px -8px;
+  margin: 8px -8px 6px -8px;
   background: #DAE9D6;
   border-radius: 8px;
 }
