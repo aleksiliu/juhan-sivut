@@ -27,10 +27,6 @@ const GlobalStyle = createGlobalStyle`
     font-weight: 400;
   }
 
-  img, p {
-    margin-bottom: 0
-  }
-
   * {
     margin: 0;
     box-sizing: border-box;
