@@ -54,8 +54,7 @@ const CircleContainer = styled.span`
 
 const P = styled.p`
   padding-bottom: 24px;
-  border-bottom: 2px solid #F5F5F5;
-  
+  border-bottom: 2px solid #EDEDED;
 `
 
 

@@ -53,6 +53,9 @@ const H1 = styled.h1`
   margin: 8px -8px 6px -8px;
   background: #DAE9D6;
   border-radius: 8px;
+  @media (max-width: 768px) {
+    margin: 16px 16px 16px 16px;
+  }
 }
 `
 const Intro = () => (

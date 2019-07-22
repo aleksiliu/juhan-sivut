@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "@contentful/rich-text-react-renderer": "^13.2.0",
     "babel-plugin-styled-components": "^1.10.6",
     "gatsby": "^2.13.3",
     "gatsby-image": "^2.2.4",
@@ -14,6 +15,7 @@
     "gatsby-plugin-sharp": "^2.2.2",
     "gatsby-plugin-styled-components": "^3.1.0",
     "gatsby-plugin-typography": "^2.3.0",
+    "gatsby-source-contentful": "^2.1.14",
     "gatsby-source-filesystem": "^2.1.2",
     "gatsby-transformer-sharp": "^2.2.1",
     "prop-types": "^15.7.2",
@@ -25,6 +27,7 @@
     "typography": "^0.16.19"
   },
   "devDependencies": {
+    "env-cmd": "^9.0.3",
     "prettier": "^1.18.2"
   },
   "keywords": [
@@ -33,7 +36,7 @@
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
-    "develop": "gatsby develop",
+    "develop": "env-cmd gatsby develop",
     "dev-m": "gatsby develop -H 0.0.0.0 -p 8000",
     "format": "prettier --write src/**/*.{js,jsx}",
     "start": "npm run develop",

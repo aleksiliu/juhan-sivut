@@ -27,6 +27,20 @@ const TheseContainer = styled.div`
   
 `
 
+const TheseContainerBorder = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  padding-bottom: 24px;
+  border-bottom: 2px solid #EDEDED;
+ 
+  @media (max-width: 768px) {
+    display: block;
+  }
+  
+`
+
+
+
 const P = styled.p`
   text-transform: uppercase;
   font-size: 14px;
@@ -54,6 +68,7 @@ const UL = styled.ul`
 const ThesesGrid = styled.div`
   display: grid;
   gap: 48px 0;
+  
 
   @media (max-width: 768px) {
     gap: 32px 0;
@@ -67,7 +82,7 @@ const Theses = () => (
       <H2>Teesit</H2>
 
       <ThesesGrid>
-      <TheseContainer>
+      <TheseContainerBorder>
 
       <These>
       <Icon src={sales} alt="sales" />
@@ -78,7 +93,7 @@ const Theses = () => (
 <li><strong>Kuuntelu</strong>  <p>Meillä on kaksi korvaa ja yksi suu sen takia, että kuuntelisimme enemmän. Kuuntele, mitä asiakas haluaa ja etene sen mukaan.</p></li>
 <li><strong>Perusasioiden palvominen</strong>  <p>Toista perusasioita useasti, niin oppimiskäyräsi nousee ekspotentiaalisesti.</p></li></UL>
 
-      </TheseContainer>
+      </TheseContainerBorder>
   
       <TheseContainer>
 

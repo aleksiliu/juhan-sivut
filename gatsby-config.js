@@ -1,9 +1,16 @@
 module.exports = {
   siteMetadata: {
-    title: `Juha Makkonen`,
+    title: `Juha Makkonen CV`,
     author: `Aleksi Liukkonen`,
   },
   plugins: [
+    {
+      resolve: 'gatsby-source-contentful',
+      options: {
+        spaceId: process.env.CONTENTFUL_SPACE_ID,
+        accessToken: process.env.CONTENTFUL_ACCES_TOKEN
+      }
+    },
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-react-helmet`,
     {
