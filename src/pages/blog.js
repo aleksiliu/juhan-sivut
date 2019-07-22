@@ -53,7 +53,7 @@ const BlogPage = () => {
         node {
           title
           slug
-          publishedDate(fromNow: true)
+          publishedDate(fromNow: true, locale: "fi")
         }
       }
     }
