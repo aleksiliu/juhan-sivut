@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { Link, graphql } from "gatsby"
 import Container from "../components/Container"
 import Section from "../components/Section"
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
@@ -71,6 +71,7 @@ const BlogPost = (props) => {
     <Nav />
     <Section>
     <Container>
+      <Link to="/blog/">Takaisin</Link>
     <h1>{props.data.contentfulBlogPost.title}</h1>
     <p>{props.data.contentfulBlogPost.publishedDate}</p>
     {  !props.data.contentfulBlogPost.body ? <p>Ei tekstiä..</p> : documentToReactComponents(props.data.contentfulBlogPost.body.json, options )}

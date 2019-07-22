@@ -82,7 +82,7 @@ const BlogPage = () => {
       })}
     </ol>
 
-    <Link to="/">Back</Link>
+   
   </Container>
   </Section>
 </>
