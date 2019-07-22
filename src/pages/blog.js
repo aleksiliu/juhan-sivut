@@ -4,7 +4,7 @@ import Container from "../components/Container"
 import Section from "../components/Section"
 
 import Nav from "../components/Nav"
-
+import Seo from "../components/seo"
 import { createGlobalStyle } from "styled-components"
 
 const GlobalStyle = createGlobalStyle`
@@ -64,7 +64,7 @@ const BlogPage = () => {
   return (
   <>
   <GlobalStyle />
-  
+    <Seo title="Blog" />
     <Nav />
     <Section>
     <Container>
