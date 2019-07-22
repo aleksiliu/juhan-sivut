@@ -27,7 +27,7 @@ const GlobalStyle = createGlobalStyle`
     font-weight: 400;
   }
 
-  img, p {
+  img {
     margin-bottom: 0
   }
 

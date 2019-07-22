@@ -28,7 +28,9 @@ const GlobalStyle = createGlobalStyle`
     font-weight: 400;
   }
 
- 
+  img {
+    margin-bottom: 0
+  }
 
   * {
     margin: 0;

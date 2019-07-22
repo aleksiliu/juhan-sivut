@@ -28,6 +28,7 @@ const Blog = styled.div`
 
 const BlogText = styled.p`
   margin-right: 8px;
+  margin-bottom: 0;
 `
 
 const StyledLink = styled(Link)`
