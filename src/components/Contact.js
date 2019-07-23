@@ -82,7 +82,7 @@ const CustomSection = styled(Section)`
 `
 
 const Contact = () => (
-  <CustomSection gradient>
+  <CustomSection gradient id="contact">
     <StripeLeft src={circleStripes} alt="stripes" />
     <StripeRight src={circleStripes} alt="stripes" />
     

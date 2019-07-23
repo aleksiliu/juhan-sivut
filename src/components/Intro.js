@@ -71,12 +71,12 @@ const Intro = ({backgroundImage}) => (
     <Container>
     <IntroContainer>
       <IntroText>
-        <H1>Venatis odio doneci</H1>
+        <H1>Etsin uusia haasteita</H1>
         <IntroParagraph>
-          Donec molestie, odio nec ultrices venenatis, lectus augue pellentesque
-          ex, a auctor tortor ipsum et.
+          Taloushallinnosta, finanssialasta tai B2B-myynnistä.
           </IntroParagraph>
         <Button hide
+        href="#contact"
         >
           Ota yhteyttä
         </Button>
