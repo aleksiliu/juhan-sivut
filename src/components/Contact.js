@@ -13,11 +13,6 @@ const H1 = styled.h1`
   color: #FFF;
 `
 
-const ContactText = styled.p`
-  text-align: center;
-  color: #FFF;
-`
-
 const ContactContainer = styled(Container)`
   margin-bottom: 32px;
   padding: 112px 32px;
@@ -89,7 +84,7 @@ const Contact = () => (
     <ContactContainer>
     
         <H1>Haluaisitko minut töihin?</H1>
-        <ContactText>Donec molestie, odio nec ultrices venenatis, lectus augue pellentesque ex, a auctor tortor ipsum et.</ContactText>
+      
         
         <ButtonContainer>
         <IconButton secondary href="tel:+358 40 5748126"><Icon src={phone} alt="phone" />+358 40 5748126</IconButton>
