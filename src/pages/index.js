@@ -1,5 +1,5 @@
 import React from "react"
-
+import { graphql } from "gatsby"
 import Seo from "../components/seo"
 import Nav from "../components/Nav"
 import Intro from "../components/Intro"
@@ -41,12 +41,14 @@ const GlobalStyle = createGlobalStyle`
   }
 `
 
-const IndexPage = () => (
+
+
+const IndexPage = ( { data }) => (
   <>
     <GlobalStyle />
     <Seo title="Etusivu" />
     <Nav />
-    <Intro />
+    <Intro backgroundImage={data.image.childImageSharp.fluid} />
     <About />
     <Work />
     <Theses />
@@ -55,3 +57,17 @@ const IndexPage = () => (
 )
 
 export default IndexPage
+
+
+export const query = graphql`
+query {
+  image: file(relativePath: { eq: "Juha.png" }) {
+    childImageSharp {
+      fluid(maxWidth: 800) {
+        ...GatsbyImageSharpFluid
+      }
+    }
+  }
+}
+`;
+

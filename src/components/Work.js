@@ -25,6 +25,7 @@ const P = styled.p`
 `
 const WorkYear = styled.p`
   color: #5C5C68;
+  margin-bottom: 0;
 `
 
 const WorkExp = styled.div`

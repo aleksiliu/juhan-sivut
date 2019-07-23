@@ -1,18 +1,21 @@
 import React from "react"
+
+import Img from "gatsby-image"
 import styled from "styled-components"
 
-import juha from "../images/Juha.png"
 import Section from "./Section"
 import Button from "./Button"
 import Container from "./Container"
 
+
 const IntroContainer = styled.div`
   margin: 0 auto;
   max-width: 1110px;
-  display: flex;
-
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   @media (max-width: 768px) {
-    flex-direction: column;
+    grid-template-columns: 1fr;
+    margin-bottom: 16px;
   }
 `
 const IntroText = styled.div`
@@ -26,14 +29,13 @@ const IntroText = styled.div`
 `
 const IntroImg = styled.div`
   max-width: 440px;
-  margin-top: -80px;
+  margin-top: -90px;
   margin-bottom: -100px;
-  margin-left: 100px;
   @media (max-width: 768px) {
     max-width: 100%;
     margin-left: 0;
     text-align: center;
-    margin-top: 24px;
+    margin-top: 32px;
   }
 `
 
@@ -58,23 +60,29 @@ const H1 = styled.h1`
   }
 }
 `
-const Intro = () => (
+
+const IntroParagraph = styled.p`
+margin-bottom: 0;
+`
+
+
+const Intro = ({backgroundImage}) => (
   <Section>
     <Container>
     <IntroContainer>
       <IntroText>
         <H1>Venatis odio doneci</H1>
-        <p>
+        <IntroParagraph>
           Donec molestie, odio nec ultrices venenatis, lectus augue pellentesque
           ex, a auctor tortor ipsum et.
-        </p>
+          </IntroParagraph>
         <Button hide
         >
           Ota yhteyttä
         </Button>
       </IntroText>
       <IntroImg>
-        <img src={juha} alt="nuoli" />
+      <Img fluid={backgroundImage} />
       </IntroImg>
     </IntroContainer>
     </Container>
@@ -82,3 +90,7 @@ const Intro = () => (
 )
 
 export default Intro
+
+
+
+
