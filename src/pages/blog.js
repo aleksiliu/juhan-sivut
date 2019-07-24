@@ -6,6 +6,7 @@ import Section from "../components/Section"
 import Nav from "../components/Nav"
 import Seo from "../components/seo"
 import { createGlobalStyle } from "styled-components"
+import styled from "styled-components"
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -38,6 +39,23 @@ const GlobalStyle = createGlobalStyle`
   }
 `
 
+const CustomSection = styled(Section)`
+ max-height: 400px;
+`
+
+const BlogText = styled.div`
+ text-align: center;
+ color: #FFF !important;
+
+`
+
+const BlogContainer = styled.div`
+  background-color: #FFF; 
+  border-radius: 4px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 24px;
+`
+
 const BlogPage = () => {
 
   const data = useStaticQuery(graphql`
@@ -66,9 +84,15 @@ const BlogPage = () => {
   <GlobalStyle />
     <Seo title="Blog" />
     <Nav />
-    <Section>
+    <CustomSection gradient>
     <Container>
-    <h1>Blog</h1>
+      <BlogText>
+        <h1>Juhan Blogi</h1>
+        <p>Tänne blogin puolelle tulen kirjoittamaan tulevasta työnhaustani, sairauden tilanteesta sekä ylipäätään mitä minulle kuuluu</p>
+      </BlogText>
+
+    <BlogContainer>
+    <h2>Uusimmat kirjoitukset</h2>
     <ol>
       {data.allContentfulBlogPost.edges.map((edge) => {
         return (
@@ -81,10 +105,10 @@ const BlogPage = () => {
         )
       })}
     </ol>
-
+    </BlogContainer>
    
   </Container>
-  </Section>
+  </CustomSection>
 </>
   )
 }

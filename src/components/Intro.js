@@ -19,7 +19,7 @@ const IntroContainer = styled.div`
   }
 `
 const IntroText = styled.div`
-  max-width: 440px;
+  max-width: 640px;
   margin-top: 40px;
   @media (max-width: 768px) {
     margin-top: 0;
