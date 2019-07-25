@@ -62,7 +62,8 @@ const BlogContainer = styled.div`
   background-color: #FFF; 
   border-radius: 4px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 24px;
+  padding: 16px 32px 0 32px;;
+  margin-top: 40px;
 `
 
 const H1 = styled.h1`
@@ -88,6 +89,11 @@ const UL = styled.ul`
       width: 100%;
       justify-content: space-between;
       align-items: center;
+
+      @media (max-width: 768px) {
+      flex-direction: column;
+      align-items: flex-start;
+      }
     }
     &:last-child {
     border: none;
@@ -99,10 +105,12 @@ const P = styled.p`
   color: #5C5C68;
   text-transform: uppercase;
   font-size: 14px;
-  margin-bottom: 8px;
+  margin-bottom: 0;
 `
 
+
 const BlogPage = () => {
+  const truncate = (input) => input.length > 40 ? `${input.substring(0, 40)}...` : input;
 
   const data = useStaticQuery(graphql`
    
@@ -147,7 +155,7 @@ const BlogPage = () => {
           <Link to={`/blog/${edge.node.slug}`}> 
           <TextContainer>
           <P>{edge.node.publishedDate}</P>
-          <h1>{edge.node.title}</h1>
+          <h1>{truncate(`${edge.node.title}`)}</h1>
           </TextContainer>
             <ArrowContainer>
               <TextArrow text="Lue lisää" to={`/blog/${edge.node.slug}`} />
