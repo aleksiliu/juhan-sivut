@@ -71,6 +71,9 @@ const BlogContainer = styled.div`
 
 const H1 = styled.h1`
   color: #FFF;
+  @media (max-width: 768px) {
+      font-size: 32px;
+      }
 `
 
 const UL = styled.ul`
