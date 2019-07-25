@@ -27,10 +27,12 @@ function SEO({ title }) {
 
   return (
     <Helmet
-    
       title={`${title} | ${site.siteMetadata.title}`}
+      meta={[
+        { name: 'description', content: 'Juha Makkonen - Etsin uusia haasteita taloushallinnosta, finanssialasta tai B2B-myynnistä.' },
+        { name: 'keywords', content: 'juha, makkonen, b2b, taloushallinto, finanssi' },
+      ]}
       >
-
       <html lang="fi" />
       </Helmet>
       
