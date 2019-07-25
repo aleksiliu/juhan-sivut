@@ -7,6 +7,9 @@ import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 import Nav from "../components/Nav"
 
 import { createGlobalStyle } from "styled-components"
+import styled from "styled-components"
+import arrow from "../images/Arrow.svg"
+     
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -51,6 +54,16 @@ export const query = graphql`
   }
  `
 
+const Arrow = styled.img`
+transform: scaleX(-1);
+margin-bottom: 16px;
+`
+
+const CustomSection = styled(Section)`
+
+  margin-bottom: 32px;
+
+`
 
 const BlogPost = (props) => {
 
@@ -69,15 +82,18 @@ const BlogPost = (props) => {
   <GlobalStyle />
   
     <Nav />
-    <Section>
+    <CustomSection>
     <Container>
-      <Link to="/blog/">Takaisin</Link>
+    <Link to="/blog/">
+    <Arrow src={arrow} alt="nuoli" />
+    </Link>
+     
     <h1>{props.data.contentfulBlogPost.title}</h1>
     <p>{props.data.contentfulBlogPost.publishedDate}</p>
     {  !props.data.contentfulBlogPost.body ? <p>Ei tekstiä..</p> : documentToReactComponents(props.data.contentfulBlogPost.body.json, options )}
       
   </Container>
-  </Section>
+  </CustomSection>
 </>
   )
 }
