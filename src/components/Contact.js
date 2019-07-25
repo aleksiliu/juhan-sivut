@@ -11,6 +11,7 @@ import circleStripes from "../images/circleStripes.png"
 const H1 = styled.h1`
   text-align: center;
   color: #FFF;
+  margin-bottom: 0;
 `
 
 const ContactContainer = styled(Container)`
