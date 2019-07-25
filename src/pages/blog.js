@@ -109,17 +109,15 @@ const P = styled.p`
   font-size: 14px;
   margin-bottom: 0;
   @media (max-width: 768px) {
-     
      margin-bottom: 8px;
      }
 `
 
 const H2 = styled.h2`
-word-wrap: break-word;
-font-size: 40px;
+  word-break: break-all;
+  font-size: 40px;
 @media (max-width: 768px) {
       font-size: 24px;
-     
       }
 `
 
