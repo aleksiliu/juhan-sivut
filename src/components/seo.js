@@ -29,7 +29,7 @@ function SEO({ title }) {
     <Helmet
     
       title={`${title} | ${site.siteMetadata.title}`}
-     
+      
       
     />
   )
