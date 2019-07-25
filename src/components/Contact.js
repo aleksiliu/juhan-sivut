@@ -89,7 +89,7 @@ const Contact = () => (
         <ButtonContainer>
         <IconButton secondary href="tel:+358 40 5748126"><Icon src={phone} alt="phone" />+358 40 5748126</IconButton>
         <IconButton secondary href="mailto:juha.petteri.makkonen@gmail.com"><Icon src={mail} alt="mail" />juha.petteri.makkonen@gmail.com</IconButton>
-        <IconButton secondary href="https://www.linkedin.com/in/juha-makkonen-407374123" target="_blank"><Icon src={linkedin} alt="linkedin" />LinkedIn</IconButton>
+        <IconButton secondary href="https://www.linkedin.com/in/juha-makkonen-407374123" rel="noopener" target="_blank"><Icon src={linkedin} alt="linkedin" />LinkedIn</IconButton>
         </ButtonContainer>
     </ContactContainer>
   
