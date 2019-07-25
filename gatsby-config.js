@@ -35,7 +35,8 @@ module.exports = {
         short_name: `Juhan CV`,
         start_url: `/`,
         background_color: `#88C577`,
-        theme_color: `#88C577`
+        theme_color: `#88C577`,
+        display: `minimal-ui`,
       },
     },
     `gatsby-plugin-offline`,
