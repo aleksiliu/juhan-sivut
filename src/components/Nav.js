@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 import styled from "styled-components"
 
 import logo from "../images/juha-makkonen.svg"
-import arrow from "../images/Arrow.svg"
+import TextArrow from "./TextArrow"
 
 const Heading = styled.header`
   display: flex;
@@ -20,22 +20,6 @@ const HeaderContainer = styled.div`
   }
 `
 
-const Blog = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-`
-
-const BlogText = styled.p`
-  margin-right: 8px;
-  margin-bottom: 0;
-`
-
-const StyledLink = styled(Link)`
-  color: #88c577;
-  text-decoration: none;
-  font-size: 16px;
-`
 
 const Nav = () => (
   
@@ -46,11 +30,7 @@ const Nav = () => (
       </Link>
 
       <nav>
-        <StyledLink to="/blog">
-          <Blog>
-            <BlogText>Blogi</BlogText> <img src={arrow} alt="nuoli" />
-          </Blog>
-        </StyledLink>
+        <TextArrow text="Blogi" to="blog" />
       </nav>
       </Heading>
     </HeaderContainer>

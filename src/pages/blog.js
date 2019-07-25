@@ -7,6 +7,7 @@ import Nav from "../components/Nav"
 import Seo from "../components/seo"
 import { createGlobalStyle } from "styled-components"
 import styled from "styled-components"
+import TextArrow from "../components/TextArrow"
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -45,7 +46,15 @@ const CustomSection = styled(Section)`
 
 const BlogText = styled.div`
  text-align: center;
- color: #FFF !important;
+ color: #FFF;
+
+`
+
+const TextContainer = styled.div`
+
+`
+
+const ArrowContainer = styled.div`
 
 `
 
@@ -54,6 +63,43 @@ const BlogContainer = styled.div`
   border-radius: 4px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   padding: 24px;
+`
+
+const H1 = styled.h1`
+  color: #FFF;
+`
+
+const UL = styled.ul`
+  list-style: none;
+  margin: 0;
+  @media (max-width: 768px) {
+    margin-left: 0;
+  }
+
+
+
+  li {
+    border-bottom: 2px solid #EDEDED;
+    padding: 16px 0;
+    
+    a {
+      text-decoration: none;
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &:last-child {
+    border: none;
+  }
+  }
+`
+
+const P = styled.p`
+  color: #5C5C68;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-bottom: 8px;
 `
 
 const BlogPage = () => {
@@ -87,24 +133,30 @@ const BlogPage = () => {
     <CustomSection gradient>
     <Container>
       <BlogText>
-        <h1>Juhan Blogi</h1>
-        <p>Tänne blogin puolelle tulen kirjoittamaan tulevasta työnhaustani, sairauden tilanteesta sekä ylipäätään mitä minulle kuuluu</p>
+        <H1>Juhan Blogi</H1>
+        <p>Tänne blogin puolelle tulen kirjoittamaan tulevasta työnhaustani, sairauden tilanteesta sekä ylipäätään mitä minulle kuuluu.</p>
       </BlogText>
 
     <BlogContainer>
-    <h2>Uusimmat kirjoitukset</h2>
-    <ol>
+    
+    <UL>
       {data.allContentfulBlogPost.edges.map((edge) => {
         return (
         <li>
+          
           <Link to={`/blog/${edge.node.slug}`}> 
-          <h2>{edge.node.title}</h2>
-          <p>{edge.node.publishedDate}</p>
+          <TextContainer>
+          <P>{edge.node.publishedDate}</P>
+          <h1>{edge.node.title}</h1>
+          </TextContainer>
+            <ArrowContainer>
+              <TextArrow text="Lue lisää" to={`/blog/${edge.node.slug}`} />
+            </ArrowContainer>
           </Link>
         </li>
         )
       })}
-    </ol>
+    </UL>
     </BlogContainer>
    
   </Container>
