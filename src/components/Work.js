@@ -24,7 +24,7 @@ const P = styled.p`
   margin-bottom: 8px;
 `
 const WorkYear = styled.p`
-  color: #5C5C68;
+  color: #ADADB3;
   margin-bottom: 0;
 `
 

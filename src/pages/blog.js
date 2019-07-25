@@ -105,8 +105,7 @@ const UL = styled.ul`
 `
 
 const P = styled.p`
-  color: #5C5C68;
-  text-transform: uppercase;
+  color: #ADADB3;
   font-size: 14px;
   margin-bottom: 0;
   @media (max-width: 768px) {
