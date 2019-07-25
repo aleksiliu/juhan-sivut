@@ -51,7 +51,10 @@ const BlogText = styled.div`
 `
 
 const TextContainer = styled.div`
-
+@media (max-width: 768px) {
+     
+      margin-bottom: 8px;
+      }
 `
 
 const ArrowContainer = styled.div`
@@ -106,6 +109,19 @@ const P = styled.p`
   text-transform: uppercase;
   font-size: 14px;
   margin-bottom: 0;
+  @media (max-width: 768px) {
+     
+     margin-bottom: 8px;
+     }
+`
+
+const H2 = styled.h2`
+word-wrap: break-word;
+font-size: 40px;
+@media (max-width: 768px) {
+      font-size: 24px;
+     
+      }
 `
 
 
@@ -155,7 +171,7 @@ const BlogPage = () => {
           <Link to={`/blog/${edge.node.slug}`}> 
           <TextContainer>
           <P>{edge.node.publishedDate}</P>
-          <h1>{truncate(`${edge.node.title}`)}</h1>
+          <H2>{truncate(`${edge.node.title}`)}</H2>
           </TextContainer>
             <ArrowContainer>
               <TextArrow text="Lue lisää" to={`/blog/${edge.node.slug}`} />
