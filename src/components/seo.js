@@ -29,9 +29,12 @@ function SEO({ title }) {
     <Helmet
     
       title={`${title} | ${site.siteMetadata.title}`}
+      >
+
+      <html lang="fi" />
+      </Helmet>
       
-      
-    />
+  
   )
 }
 
