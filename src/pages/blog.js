@@ -65,7 +65,7 @@ const BlogContainer = styled.div`
   background-color: #FFF; 
   border-radius: 4px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 16px 32px 0 32px;;
+  padding: 16px 32px 8px 32px;;
   margin-top: 40px;
 `
 
