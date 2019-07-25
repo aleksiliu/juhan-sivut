@@ -25,7 +25,7 @@ const GlobalStyle = createGlobalStyle`
     font-size: 48px;
   }
 
-  h1, h2 {
+  h1, h2, h3, h4, h5 {
     color: #303037;
     font-weight: 400;
   }
