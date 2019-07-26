@@ -21,20 +21,22 @@ const HeaderContainer = styled.div`
 `
 
 
-const Nav = () => (
+const Nav = (props) => (
+  <>
   
     <HeaderContainer>
       <Heading>
       <Link to="/">
         <img src={logo} alt="Logo" />
       </Link>
-
+{props.show === 'blog' && 
       <nav>
-        <TextArrow text="Blogi" to="blog" />
+ <TextArrow text="Blogi" to="blog" /> 
       </nav>
+      }
       </Heading>
     </HeaderContainer>
-  
+    </>
 )
 
 export default Nav

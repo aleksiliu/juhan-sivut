@@ -47,7 +47,7 @@ const IndexPage = ( { data }) => (
   <>
     <GlobalStyle />
     <Seo title="Etusivu" />
-    <Nav />
+    <Nav show="blog"  />
     <Intro backgroundImage={data.image.childImageSharp.fluid} />
     <About />
     <Work />

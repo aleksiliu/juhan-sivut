@@ -44,7 +44,7 @@ const CircleImg = styled.img`
   margin-right: 8px;
 `
 
-const CircleContainer = styled.span`
+const CircleContainer = styled.div`
   display: flex;
   margin-top: 16px;
   @media (max-width: 768px) {
@@ -71,9 +71,9 @@ const About = () => (
       <p>Juha osaa priorisoida tehtävät tärkeysjärjestykseen, jos hän on useassa projektissa mukana. Hän on johtanut useita asiakasprojekteja lunastuksen osalta omaa esimerkkiä näyttäen ja projekteja koordinoiden. Osaamista löytyy muun muassa B2B-myynnin alkupäästä, asiakashaastatteluista sekä asiakaslähtöisestä viestinnästä, raportoinnista ja presentaatioista
 
       <CircleContainer>
-        <Circle><CircleImg src={circle} alt="check" /><p>Projektikoordinointi</p></Circle>
-        <Circle><CircleImg src={circle} alt="check" /><p>Tiimityöskentely</p></Circle>
-        <Circle><CircleImg src={circle} alt="check" /><p>B2B</p></Circle>
+        <Circle><CircleImg src={circle} alt="check" /><span>Projektikoordinointi</span></Circle>
+        <Circle><CircleImg src={circle} alt="check" /><span>Tiimityöskentely</span></Circle>
+        <Circle><CircleImg src={circle} alt="check" /><span>B2B</span></Circle>
       </CircleContainer>
       </p>
       
