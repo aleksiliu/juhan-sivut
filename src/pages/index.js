@@ -7,6 +7,7 @@ import About from "../components/About"
 import Work from "../components/Work"
 import Theses from "../components/Theses"
 import Contact from "../components/Contact"
+import Testimonial from "../components/Testimonial"
 
 import { createGlobalStyle } from "styled-components"
 
@@ -52,6 +53,7 @@ const IndexPage = ( { data }) => (
     <About />
     <Work />
     <Theses />
+    <Testimonial />
     <Contact />
   </>
 )

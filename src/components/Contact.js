@@ -18,7 +18,7 @@ const H1 = styled.h1`
 
 const ContactContainer = styled(Container)`
   margin-bottom: 32px;
-  padding: 112px 32px;
+  padding: 112px 32px 60px 32px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -74,8 +74,10 @@ const CustomSection = styled(Section)`
   position: relative;
   overflow: hidden;
   margin-bottom: 32px;
+  z-index: -1;
   @media (max-width: 768px) {
     margin-bottom: 0;
+    padding: 32px 0;
   }
 `
 

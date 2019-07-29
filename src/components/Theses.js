@@ -75,10 +75,17 @@ const ThesesGrid = styled.div`
     margin-top: 32px;
   }
 `
+const CustomContainer = styled(Container)`
+
+  padding: 64px 32px 0 32px;;
+  @media (max-width: 768px) {
+    padding: 24px 24px 0 24px;
+  }
+`
 
 const Theses = () => (
   
-    <Container>
+    <CustomContainer>
       <H2>Teesit</H2>
 
       <ThesesGrid>
@@ -108,7 +115,7 @@ const Theses = () => (
 
       </TheseContainer>
       </ThesesGrid>
-    </Container>
+    </CustomContainer>
   
 )
 
