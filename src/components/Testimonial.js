@@ -41,7 +41,7 @@ const Testimonial = () => (
     <CustomContainer>
     
            <Col>    
-            <P>Juha on yksi oppimishaluisempia ja ahkerimpia työntekijöitä, joiden kanssa olen saanut tehdä töitä, kun olen ollut tiimimvetäjänä. Hän on työskennellyt vuosia asiakaskokemuksen parissa syvähaastatteluiden ja niiden analysoinnin parissa. Juha on huippu tyyppi, jolta lentää parhaimmat huonot läpät :) luottohenkilö!" </P>
+            <P>"Juha on yksi oppimishaluisempia ja ahkerimpia työntekijöitä, joiden kanssa olen saanut tehdä töitä, kun olen ollut tiimimvetäjänä. Hän on työskennellyt vuosia asiakaskokemuksen parissa syvähaastatteluiden ja niiden analysoinnin parissa. Juha on huippu tyyppi, jolta lentää parhaimmat huonot läpät :) luottohenkilö!" </P>
             <Name>Iina Vilpponen</Name>
            </Col>
       
