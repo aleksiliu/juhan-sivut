@@ -19,7 +19,7 @@ const Name = styled.span`
 
 const P = styled.p`
  font-style: italic;
-  
+margin-bottom: 16px;
 `
 
 
@@ -27,7 +27,7 @@ const P = styled.p`
 const CustomContainer = styled(Container)`
   margin: 0 auto;
   padding: 0;
-  z-index: 1;
+  z-index: 2;
   position: relative;
   top: 50px;
   @media (max-width: 768px) {
