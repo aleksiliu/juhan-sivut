@@ -35,6 +35,10 @@ const GlobalStyle = createGlobalStyle`
     margin-bottom: 0
   }
 
+  a {
+    color: #303037;
+  }
+
   * {
     margin: 0;
     box-sizing: border-box;
@@ -65,6 +69,16 @@ const CustomSection = styled(Section)`
 
 `
 
+const P = styled.p`
+ color: #ADADB3;
+  
+`
+
+const H1 = styled.h1`
+ margin-bottom: 8px;
+  
+`
+
 const BlogPost = (props) => {
 
   const options = {
@@ -88,8 +102,8 @@ const BlogPost = (props) => {
     <Arrow src={arrow} alt="nuoli" />
     </Link>
      
-    <h1>{props.data.contentfulBlogPost.title}</h1>
-    <p>{props.data.contentfulBlogPost.publishedDate}</p>
+    <H1>{props.data.contentfulBlogPost.title}</H1>
+    <P>{props.data.contentfulBlogPost.publishedDate}</P>
     {  !props.data.contentfulBlogPost.body ? <p>Ei tekstiä..</p> : documentToReactComponents(props.data.contentfulBlogPost.body.json, options )}
       
   </Container>
