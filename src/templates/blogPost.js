@@ -71,11 +71,11 @@ const CustomSection = styled(Section)`
 
 const P = styled.p`
  color: #ADADB3;
-  
+  margin-bottom: 0;
 `
 
 const H1 = styled.h1`
- margin-bottom: 8px;
+ margin-bottom: 16px;
   
 `
 
@@ -102,8 +102,9 @@ const BlogPost = (props) => {
     <Arrow src={arrow} alt="nuoli" />
     </Link>
      
-    <H1>{props.data.contentfulBlogPost.title}</H1>
     <P>{props.data.contentfulBlogPost.publishedDate}</P>
+    <H1>{props.data.contentfulBlogPost.title}</H1>
+   
     {  !props.data.contentfulBlogPost.body ? <p>Ei tekstiä..</p> : documentToReactComponents(props.data.contentfulBlogPost.body.json, options )}
       
   </Container>
