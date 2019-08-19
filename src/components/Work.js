@@ -58,10 +58,11 @@ const Work = () => (
            </WorkExp>
            <h2>Change Support Specialist</h2>
            <ul>
-            <li>Seniorina yli 10 muutostukiprojektissa liittyen auditointeihin ja PolullaPysymisPuheluihin. Lunastus, koordinointi, tulosten analysointi ja presentaatio asiakkaalle.</li>
-            <li> Yli 800 tehtyä haastattelua, sparrausta tai tapaamisen sopimista.
-</li>
-<li>  THGA-koulutusohjelma, jossa opitaan työelämänlainalaisuuksia. Käyn toista kertaa, koska vanhankertaaminen yhtä tärkeää kuin uuden oppiminen.  </li>
+             <li>Uusasiakastapaamisten sopiminen puhelimitse, prospektointi, raportointiin liittyvät tehtävät, osallistuminen ohjausryhmätyöskentelyyn sekä asiakasvalmennuksiin.</li>
+             <li>Tukenut asiakkaita muutosten läpiviennissä kartoituksen ja tutkimuksen keinoin sekä käynyt henkilökohtaisia sparrauskeskusteluita asiakkaiden kanssa. </li>
+             <li>Muutoshankkeiden jalkauttamiseen liittyneiden ryhmäkeskusteluiden fasilitointi ja vastannut Trainers' Housen asiakkaille tehtävien sparrauspuheluiden toteutumisesta.</li>
+             <li>Koordinoinut lähes 20 erilaista muutostukiprojektia sekä tehnyt yli 800 asiakashaastattelua/sparrausta tai tapaamisen sopimista.</li>
+             <li>THGA-valmennusohjelma.</li>
            </ul>
            
            </Col>
