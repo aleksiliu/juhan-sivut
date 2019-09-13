@@ -17,7 +17,7 @@ const BlogText = styled.p`
 `
 
 const StyledLink = styled(Link)`
-  color: #88c577;
+  color: #303037;
   text-decoration: none;
   font-size: 16px;
 `

@@ -8,45 +8,12 @@ import Work from "../components/Work"
 import Theses from "../components/Theses"
 import Contact from "../components/Contact"
 import Testimonial from "../components/Testimonial"
-
-import { createGlobalStyle } from "styled-components"
-
-const GlobalStyle = createGlobalStyle`
-  body {
-    ::before {
-    background: linear-gradient(160.12deg, #BFDDB6 0%, #4CB8BA 100%);
-    transform: matrix(-1, 0, 0, 1, 0, 0);
-    content: "";
-    display: block;
-    height: 4px;
-  }
-  }
-
-  h1 {
-    font-size: 48px;
-  }
-
-  h1, h2, h3, h4, h5 {
-    color: #303037;
-    font-weight: 400;
-  }
-
-  img {
-    margin-bottom: 0
-  }
-
-  * {
-    margin: 0;
-    box-sizing: border-box;
-    padding: 0;
-  }
-`
-
+import './index.css'
 
 
 const IndexPage = ( { data }) => (
   <>
-    <GlobalStyle />
+    
     <Seo title="Etusivu" />
     <Nav show="blog"  />
     <Intro backgroundImage={data.image.childImageSharp.fluid} />

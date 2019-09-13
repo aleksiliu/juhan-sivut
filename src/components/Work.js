@@ -18,13 +18,14 @@ const Row = styled.div`
 `
 
 const P = styled.p`
-  color: #88C577;
+  color: #303037;
+  font-weight: bold;
   text-transform: uppercase;
   font-size: 14px;
   margin-bottom: 8px;
 `
 const WorkYear = styled.p`
-  color: #ADADB3;
+  color: #5C5C68;
   margin-bottom: 0;
 `
 

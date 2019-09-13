@@ -13,8 +13,7 @@ const Col = styled.div`
 `
 
 const Name = styled.span`
- color: #ADADB3;
-  
+ color: #5C5C68;
 `
 
 const P = styled.p`
