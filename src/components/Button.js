@@ -4,8 +4,8 @@ const Button = styled.a`
   display: inline-block;
   border-radius: 25px;
   padding: 8px 24px;
-  background: #88c577;
-  color: white;
+  background: #FFF;
+  color: #303037;
   text-decoration: none;
   margin-top: 24px;
   box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
@@ -22,7 +22,7 @@ const Button = styled.a`
 
   ${props => props.secondary && css`
     background: #FFF;
-    color: #5C5C68;
+    color: #303037;
     &:hover {
     color: #88c577;
     }
